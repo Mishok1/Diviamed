@@ -55,6 +55,7 @@ body {
 
 .main_header {
   width: 100%;
+  position: relative;
 }
 
 .header_info {
@@ -130,9 +131,21 @@ body {
 }
 
 .header_contacts {
+  /* height: 500px; */
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+  z-index: 2;
+}
+
+.header_contacts::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  width: 1500px;
+  height: 1px;
+  bottom: 0;
+  background-color: #1E1E1E;
 }
 
 .header_logo_link {

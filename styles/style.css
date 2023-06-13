@@ -145,7 +145,7 @@ body {
   width: 1500px;
   height: 1px;
   bottom: 0;
-  background-color: #1E1E1E;
+  background-color: #b8b8b8;
 }
 
 .header_logo_link {
@@ -166,18 +166,48 @@ body {
   color: #1E1E1E;
 }
 
-/* carusel */
+/* navigation */
 
-.carousel_section{
-    margin: 0 auto;
-    width: 90%;
-    max-height:845px;
-    max-width: 1500px;
+.navigation {
+  display: flex;
+  padding: 22px 0;
 }
 
-.carousel_wrapper{
-    width: 100%;
-    position: relative;
+.navigation_list {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+}
+
+.navigation_link {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+.header_form_input {
+  font-family: "Michroma";
+  font-weight: 400;
+  font-size: 100%;
+  /* Mojno kak to inache s font-size? */
+  border: none;
+  outline: none;
+}
+
+/* carusel */
+
+.carousel_section {
+  margin: 0 auto;
+  width: 90%;
+  max-height: 845px;
+  max-width: 1500px;
+}
+
+.carousel_wrapper {
+  width: 100%;
+  position: relative;
 }
 
 .carousel_button {
@@ -188,35 +218,35 @@ body {
   height: 50px;
   border: none;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   position: absolute;
   cursor: pointer;
 }
 
-.carousel_button_left{
+.carousel_button_left {
   top: 50%;
-  left:-80px;
+  left: -80px;
 }
 
-.carousel_button_right{
+.carousel_button_right {
   top: 50%;
   right: -80px;
 }
 
 .carousel_prev_arrow,
-.carousel_next_arrow{
+.carousel_next_arrow {
   opacity: .5;
 }
 
-.carousel_prev_arrow{
+.carousel_prev_arrow {
   transform: rotateY(180deg);
 }
 
 .carousel_prev_arrow:hover,
 .corusel_next_arrow:hover,
 .carousel_button:hover .carousel_prev_arrow,
-.carousel_button:hover .carousel_next_arrow{
+.carousel_button:hover .carousel_next_arrow {
   opacity: 1;
 }
 
@@ -264,23 +294,25 @@ body {
   1024px;
 */
 
-@media (max-width:1800px){
+@media (max-width:1800px) {
+
   /* carousel */
-  .carousel_button_left{
+  .carousel_button_left {
     top: 50%;
     left: 20px;
   }
-  
-  .carousel_button_right{
+
+  .carousel_button_right {
     top: 50%;
     right: 20px;
   }
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
+
   /* carousel */
   .carousel_button_left,
-  .carousel_button_right{
+  .carousel_button_right {
     display: none;
   }
 }

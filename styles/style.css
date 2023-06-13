@@ -170,7 +170,7 @@ body {
 
 .carousel_section{
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     max-height:845px;
     max-width: 1500px;
 }
@@ -256,6 +256,25 @@ body {
   object-fit: cover;
 }
 
+.carousel_mobile_pagination{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  gap: 15px;
+}
+
+.carousel_mobile_pagination_link{
+  padding: 8px;
+  background:black;
+  border:none;
+  border-radius: 50%;
+}
+
+.carousel_mobile_pagination_active_link{
+  opacity: .70;
+}
 
 /* media */
 
@@ -283,4 +302,9 @@ body {
   .carousel_button_right{
     display: none;
   }
+
+  .carousel_mobile_pagination{
+  display: flex;
+}
+
 }

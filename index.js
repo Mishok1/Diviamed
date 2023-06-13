@@ -28,7 +28,7 @@ const startDrag = (e) => {
 }
 
 const autoSlide = () => {
-    console.log('autoslde')
+    const allLinks = document.querySelectorAll('.carousel_mobile_pagination_link');
     positionDiff = Math.abs(positionDiff);
     let valDifference = coruselImgWidth - positionDiff
     if (carousel.scrollLeft > prevScrollLeft) {
@@ -36,12 +36,18 @@ const autoSlide = () => {
     } else {
         carousel.scrollLeft -= positionDiff > coruselImgWidth / 6 ? valDifference : -positionDiff
     }
+    allLinks.forEach((link, i) => {
+        if (Math.ceil(carousel.scrollLeft / coruselImgWidth) >= i + 1 || Math.ceil(carousel.scrollLeft / coruselImgWidth) <= i - 1) {
+            link.classList.remove('carousel_mobile_pagination_active_link');
+        } else {
+            link.classList.add('carousel_mobile_pagination_active_link');
+        }
+    })
 }
 
-const spopDrag = () => {
+const stopDrag = () => {
     canDrag = false;
     carousel.classList.remove('dragging');
-    console.log('dragging')
     autoSlide();
 }
 
@@ -58,15 +64,31 @@ carousel.addEventListener('touchstart', startDrag);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('touchmove', dragging);
 
-carousel.addEventListener('mouseup', spopDrag);
-carousel.addEventListener('touchend', spopDrag);
+carousel.addEventListener('mouseup', stopDrag);
+carousel.addEventListener('touchend', stopDrag);
 
 const getMobilePagination = () => {
     const allSlides = carousel.querySelectorAll('.carousel_item')
-    console.log(allSlides)
+    allSlides.forEach((slide, index) => {
+        mobilePagination.innerHTML += `
+        <button
+            class="carousel_mobile_pagination_link"
+            onClick="navigateMobilePagination(${index})"
+        ></button>
+        `
+    })
+}
+
+const navigateMobilePagination = (index) => {
+    const allLinks = document.querySelectorAll('.carousel_mobile_pagination_link');
+    carousel.scrollLeft = coruselImgWidth * index;
+    allLinks.forEach((link, i) => {
+        if (index === i) {
+            link.classList.add('carousel_mobile_pagination_active_link');
+        } else {
+            link.classList.remove('carousel_mobile_pagination_active_link');
+        }
+    })
 }
 
 getMobilePagination()
-
-mobilePagination.innerHTML = `
-`

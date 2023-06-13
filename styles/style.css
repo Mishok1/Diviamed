@@ -6,7 +6,7 @@
     font-display: swap;
 }
 
-/* .visually-hidden {
+.visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -17,7 +17,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 *,
 *::before,
@@ -134,17 +134,19 @@ body {
     height: 50px;
 }
 
-.courusel{
+.courusel_list{
     height: 100%;
     width: 100%;
     white-space: nowrap;
     margin: 0 auto;
+    padding: 0;
     overflow: scroll;
     font-size: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
     cursor: pointer;
     scroll-behavior: smooth;
+    list-style-type: none;
 }
 
 .courusel.dragging{

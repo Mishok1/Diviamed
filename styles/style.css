@@ -149,12 +149,12 @@ body {
     list-style-type: none;
 }
 
-.courusel.dragging{
+.courusel_list.dragging{
     cursor: grab;
     scroll-behavior: auto;
 }
 
-.courusel::-webkit-scrollbar {
+.courusel_list::-webkit-scrollbar {
     display: none;
 }
 
@@ -168,4 +168,3 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
-

@@ -127,46 +127,63 @@
     </header>
     <main class="main_container">
         <h1 class="visually_hidden">Diviamed</h1>
-        <section class="courusel_section">
+        <section class="carousel_section">
             <h2 class="visually_hidden">Slider</h2>
-            <div class="courusel_wrapper">
-                <button class="courusel_button" id="courusel_prev">&#60;</button>
-                <ul id="courusel" class="courusel_list">
-                    <li class="courusel_item">
+            <div class="carousel_wrapper">
+                <button class="carousel_button carousel_button_left" id="carousel_prev">
+                    <svg class="carousel_prev_arrow" xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow">
+                        <path fill="#ffff" d="m-210.9-289-2-2 11.8-11.7-11.8-11.7 2-2 13.8 13.7-13.8 13.7"
+                            transform="translate(237 335)">
+                        </path>
+                    </svg>
+                </button>
+                <ul id="carousel" class="carousel_list">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_1.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_2.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_3.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_4.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_5.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_6.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_7.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_8.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_9.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_10.jpg" alt="hands with heart">
                     </li>
-                    <li class="courusel_item">
+                    <li class="carousel_item">
                         <img src="./images/index/slider/slide_11.jpg" alt="hands with heart">
                     </li>
                 </ul>
-                <button class="courusel_button" id="courusel_next">&#62;</button>
+                <button class="carousel_button carousel_button_right" id="carousel_next">
+                    <svg class="carousel_next_arrow" xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow">
+                        <path fill="#ffff" d="m-210.9-289-2-2 11.8-11.7-11.8-11.7 2-2 13.8 13.7-13.8 13.7"
+                            transform="translate(237 335)">
+                        </path>
+                    </svg>
+                </button>
+                <!-- carousel mobile navigation -->
+                <div id="carousel_mobile_pagination" class="carousel_mobile_pagination">
+                </div>
             </div>
         </section>
     </main>

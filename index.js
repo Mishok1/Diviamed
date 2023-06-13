@@ -1,9 +1,10 @@
-const prevBtn = document.getElementById('courusel_prev');
-const nextBtn = document.getElementById('courusel_next');
-const courusel = document.getElementById('courusel');
-const buttonPrev = document.getElementById('courusel_prev');
-const buttonNext = document.getElementById('courusel_next');
-const coruselImg = courusel.querySelectorAll('.courusel_item')[0];
+const prevBtn = document.getElementById('carousel_prev');
+const nextBtn = document.getElementById('carousel_next');
+const carousel = document.getElementById('carousel');
+const buttonPrev = document.getElementById('carousel_prev');
+const buttonNext = document.getElementById('carousel_next');
+const coruselImg = carousel.querySelectorAll('.carousel_item')[0];
+const mobilePagination = document.getElementById('carousel_mobile_pagination');
 
 let canDrag = false;
 let prevPageX;
@@ -12,34 +13,34 @@ let positionDiff;
 let coruselImgWidth = coruselImg.clientWidth;
 
 buttonPrev.addEventListener('click', () => {
-    courusel.scrollLeft -= coruselImgWidth
+    carousel.scrollLeft -= coruselImgWidth
 });
 
 buttonNext.addEventListener('click', () => {
-    courusel.scrollLeft += coruselImgWidth
+    carousel.scrollLeft += coruselImgWidth
 });
 
 const startDrag = (e) => {
     canDrag = true;
     prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = courusel.scrollLeft;
-    courusel.classList.add('dragging');
+    prevScrollLeft = carousel.scrollLeft;
+    carousel.classList.add('dragging');
 }
 
 const autoSlide = () => {
     console.log('autoslde')
     positionDiff = Math.abs(positionDiff);
     let valDifference = coruselImgWidth - positionDiff
-    if (courusel.scrollLeft > prevScrollLeft) {
-        courusel.scrollLeft += positionDiff > coruselImgWidth / 6 ? valDifference : -positionDiff
+    if (carousel.scrollLeft > prevScrollLeft) {
+        carousel.scrollLeft += positionDiff > coruselImgWidth / 6 ? valDifference : -positionDiff
     } else {
-        courusel.scrollLeft -= positionDiff > coruselImgWidth / 6 ? valDifference : -positionDiff
+        carousel.scrollLeft -= positionDiff > coruselImgWidth / 6 ? valDifference : -positionDiff
     }
 }
 
 const spopDrag = () => {
     canDrag = false;
-    courusel.classList.remove('dragging');
+    carousel.classList.remove('dragging');
     console.log('dragging')
     autoSlide();
 }
@@ -48,14 +49,24 @@ const dragging = (e) => {
     if (!canDrag) { return };
     e.preventDefault();
     positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    courusel.scrollLeft = prevScrollLeft - positionDiff;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
 
-courusel.addEventListener('mousedown', startDrag);
-courusel.addEventListener('touchstart', startDrag);
+carousel.addEventListener('mousedown', startDrag);
+carousel.addEventListener('touchstart', startDrag);
 
-courusel.addEventListener('mousemove', dragging);
-courusel.addEventListener('touchmove', dragging);
+carousel.addEventListener('mousemove', dragging);
+carousel.addEventListener('touchmove', dragging);
 
-courusel.addEventListener('mouseup', spopDrag);
-courusel.addEventListener('touchend', spopDrag);
+carousel.addEventListener('mouseup', spopDrag);
+carousel.addEventListener('touchend', spopDrag);
+
+const getMobilePagination = () => {
+    const allSlides = carousel.querySelectorAll('.carousel_item')
+    console.log(allSlides)
+}
+
+getMobilePagination()
+
+mobilePagination.innerHTML = `
+`

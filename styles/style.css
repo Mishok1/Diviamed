@@ -114,8 +114,8 @@ body {
 /* carusel */
 
 .courusel_section{
-    margin: 0 50px;
-    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 50px;
     max-height:845px;
     max-width: 1500px;
 }
@@ -124,6 +124,8 @@ body {
     display: flex;
     align-items: center;
     gap: 25px;
+    outline: 1px solid red;
+    width: 100%;
 }
 
 .courusel_button{

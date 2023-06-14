@@ -401,6 +401,57 @@ body {
   text-decoration: underline;
 }
 
+/* specialities_section */
+
+.specialities_section {
+  margin-bottom: 100px;
+}
+
+.specialities_title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.specialities_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specialities_item {
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  margin-bottom: 30px;
+}
+
+.specialities_subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.specialities_img {
+  order: -1;
+  margin-bottom: 25px;
+}
+
+.specialities_link {
+  text-decoration: none;
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
 /* footer */
 
 .main_footer{
@@ -526,22 +577,6 @@ body {
     top: auto;
     left: auto;
     right: auto;
-}
-  /* footer */
-
-  .footer_form{
-    width: 338px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .footer_label{
-    width: 100%;
-  }
-
-  .footer_input_email{
-  width: 168px;
 }
 
 .footer_input_button{

@@ -697,6 +697,7 @@ body {
 
   .main_footer_contact_buton{
     margin: 0;
+    border: none;
   }
 
   .main_footer_payment{

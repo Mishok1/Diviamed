@@ -553,7 +553,7 @@ body {
   .main_footer_upper{
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .main_footer_upper .footer_logo_link{
@@ -579,8 +579,23 @@ body {
     right: auto;
 }
 
-.footer_input_button{
-  float: none;
-  margin-left: 25px;
-}
+  .footer_label{
+    width: 100%;
+  }
+
+  .footer_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 340px;
+  }
+
+  .footer_input_email{
+    width: 168px;
+  }
+
+  .footer_input_button{
+    float: none;
+    margin-left: 25px;
+  }
 }

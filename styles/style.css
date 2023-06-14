@@ -215,6 +215,7 @@ body {
 
 .carousel_section {
   margin: 0 auto;
+  margin-bottom: 50px;
   width: 85%;
   max-height: 845px;
   max-width: 1500px;
@@ -319,6 +320,26 @@ body {
 
 .carousel_mobile_pagination_active_link {
   opacity: .70;
+}
+
+/* welcome section */
+
+.welcome_section {
+  position: relative;
+  max-width: 1245px;
+  padding: 50px 50px 50px 150px;
+  margin-left: auto;
+  background-color: #e5e5e5;
+}
+
+.welcome_section::after {
+  content: url('../images/index/welcome_image.jpg');
+  display: block;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-150%);
+  left: 0;
 }
 
 /* why us section */

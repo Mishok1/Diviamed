@@ -452,6 +452,44 @@ body {
   padding: 12px;
 }
 
+/* we recommend */
+
+.we_recommend{
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.we_recommend_header{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 3rem;
+}
+
+.we_recommend_company_list{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.we_recommend_company_list_item{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.we_recommend_img{
+  width: 100%;
+  height: 100%;
+}
+
 /* footer */
 
 .main_footer{
@@ -556,6 +594,7 @@ body {
   font-size: 1.25rem;
   margin: 0 auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .main_footer_payment{
@@ -608,10 +647,20 @@ body {
   .why_us_article .why_us_img{
     width: 250px;
 }
+
+/* we recommend */
+
+.we_recommend_company_list{
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
   
 }
 
 @media (min-width:1024px) {
+
 /* footer */
   .main_footer_upper{
     flex-direction: row-reverse;
@@ -654,6 +703,7 @@ body {
     right: auto;
   }
 
+/* footer */
   .footer_label{
     width: 100%;
   }
@@ -705,4 +755,10 @@ body {
     gap: 30px;
     justify-content: center;
   }
+}
+
+@media (max-width: 800px){ 
+.we_recommend_header{
+  font-size: 2rem;
+}
 }

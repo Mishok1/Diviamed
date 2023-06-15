@@ -490,6 +490,56 @@ body {
   height: 100%;
 }
 
+/* contact section */
+
+.contact_section{
+  width: 100%;
+  padding: 100px 0;
+  background-image:url("../images/backgound.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.contact_section_header{
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color:white;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.contact_section_form{
+  width: 95%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.contact_section_form_left,
+.contact_section_form_right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact_section_form_left input,
+.contact_section_form_left select,
+.contact_section_form_left option{
+  font-size: 1.25rem;
+  font-family: inherit;
+  height: 75px;
+  padding-left: 20px;
+}
+
+.contact_section_form_right textarea{
+  resize: none;
+  height: 275px;
+  padding: 25px 0 0 25px;
+  font-size: 1.25rem;
+  font-family: inherit;
+}
+
 /* footer */
 
 .main_footer{

@@ -491,6 +491,40 @@ body {
 }
 /* videso */
 
+.video_section{
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.vide_section_header{
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.video_section_videos_list{
+  margin: 0;
+  padding: 0;
+}
+
+.video_list_item{
+  list-style: none;
+  width: 100%;
+}
+
+.video_list_item_header{
+  font-size: 1.75rem;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.video_list_item_video{
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
 
 /* contact section */
 
@@ -500,7 +534,6 @@ body {
   background-image:url("../images/backgound.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .contact_section_header{
@@ -728,6 +761,17 @@ body {
 }
 
 @media (min-width:1024px) {
+  /* video */
+  .video_list_item{
+    width: 45%;
+    max-width: 480px;
+    height: 315px;
+  }
+
+  .video_list_item video{
+    height: 100%;
+    margin: 0;
+  }
 
 /* footer */
   .main_footer_upper{
@@ -770,6 +814,12 @@ body {
   }
   .contact_section_form_right button{
     margin: 0;
+  }
+
+  .video_section_videos_list{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
   }
 }
 

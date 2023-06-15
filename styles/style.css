@@ -519,7 +519,7 @@ body {
 .contact_section_form_right{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 20px;
 }
 
@@ -723,7 +723,6 @@ body {
   align-items: center;
   gap: 20px;
 }
-  
 }
 
 @media (min-width:1024px) {
@@ -749,6 +748,26 @@ body {
   }
   .main_footer_contact_item{
     flex-wrap: nowrap;
+  }
+  
+/* contact */
+
+  .contact_section_form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .contact_section_form_left,
+  .contact_section_form_right{
+    width: 50%;
+  }
+
+  .contact_section_form_right textarea{
+    width: 100%;
+  }
+  .contact_section_form_right button{
+    margin: 0;
   }
 }
 

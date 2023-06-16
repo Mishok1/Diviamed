@@ -405,7 +405,7 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 .why_us_paragraph{
   margin-top: 0;
@@ -477,6 +477,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 12px;
+}
+
+.specialities_link:hover {
+  transition-property: backgroun-color, color;
+  transition-duration: 450ms;
+  color: #e5e5e5;
+  background-color: #1E1E1E;
+  transition-delay: 1s;
+  /* ubrat mem; */
 }
 
 /* we recommend */
@@ -651,6 +660,7 @@ body {
 }
 
 .footer_logo_img{
+  display: block;
   width: 100%;
 }
 
@@ -802,25 +812,25 @@ body {
   }
 
   /* contact */
-  
+
     .contact_section_form{
       display: flex;
       justify-content: space-between;
       gap: 20px;
     }
-  
+
     .contact_section_form_left,
     .contact_section_form_right{
       width: 50%;
     }
-  
+
     .contact_section_form_right textarea{
       width: 100%;
     }
     .contact_section_form_right button{
       margin: 0;
     }
-  
+
     .video_section_videos_list{
       display: flex;
       justify-content: space-between;
@@ -848,12 +858,12 @@ body {
   .main_footer_contact_item{
     flex-wrap: nowrap;
   }
-  
+
 }
 
 @media (min-width:800px) {
   /* about us */
-  
+
   /* about us */
   .content_container{
     position: relative;
@@ -952,7 +962,7 @@ body {
   }
 }
 
-@media (max-width: 800px){ 
+@media (max-width: 800px){
 .we_recommend_header{
   font-size: 2rem;
 }

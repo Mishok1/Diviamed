@@ -365,8 +365,21 @@ body {
   padding-left: 20px;
 }
 
-.welcome_text.blue{
+.welcome_text.blue,
+.welcome_text.link{
   color:#677EC0;
+}
+
+.subheading{
+  font-weight: bolder;
+}
+
+.welcome_text.link{
+  text-decoration: none;
+}
+
+.welcome_text.link:hover{
+  text-decoration: underline;
 }
 
 /* why us section */
@@ -890,6 +903,12 @@ body {
 }
 
 @media (min-width:800px) {
+  
+/* support services */
+.welcome_text.subheading,
+.welcome_text.link{
+  align-self: flex-end;
+}
   /* about us */
 
   /* about us */
@@ -994,4 +1013,5 @@ body {
 .we_recommend_header{
   font-size: 2rem;
 }
+
 }

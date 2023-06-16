@@ -328,6 +328,7 @@ body {
   width: 95%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
 
 .welcome_header{
@@ -338,6 +339,7 @@ body {
 }
 
 .welcome_header_desc{
+  margin: 2rem 0;
   line-height: normal;
   display: block;
   font-size: 1.25rem;
@@ -388,6 +390,7 @@ body {
   max-width: 1500px;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -561,6 +564,7 @@ body {
 .video_list_item{
   list-style: none;
   width: 100%;
+  height: auto;
 }
 
 .video_list_item_header{
@@ -839,6 +843,11 @@ body {
 }
 
 @media (min-width:1024px) {
+
+  /* welcome */
+  .welcome_header_desc{
+    font-size: 2rem;
+  }
 
   /* video */
   .video_list_item{

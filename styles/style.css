@@ -755,6 +755,7 @@ body {
 
 /* break points
   1800px;
+  1440px;
   1024px;
   800px;
 */
@@ -769,6 +770,33 @@ body {
   .carousel_button_right {
     top: 50%;
     right: 20px;
+  }
+}
+
+@media (min-width:1560px){
+  /* about us */
+  .content_container .welcome_image{
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media (min-width:1440px){
+  /* about us */
+  .content_container .welcome_text_wrapper{
+    margin-left: auto;
+    width: auto;
+    padding: 50px 150px;
+  }
+
+  .welcome_text_wrapper .welcome_text,
+  .welcome_text_wrapper .welcome_list{
+    padding-left: 0;
+    font-size: 1.25rem;
+    max-width: 945px;
+  }
+  .welcome_text_wrapper .welcome_list{
+    padding-left: 20px;
   }
 }
 
@@ -867,29 +895,29 @@ body {
   /* about us */
   .content_container{
     position: relative;
-}
-.welcome_image{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
+  }
+  .welcome_image{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 
-.welcome_text_wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items:end;
-}
+  .welcome_text_wrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items:end; */
+  }
 
-.welcome_text{
-  padding-left: 250px;
-  max-width: 945px;
-}
+  .welcome_text{
+    padding-left: 250px;
+    /* max-width: 945px; */
+  }
 
-.welcome_list{
-  padding-left: 270px;
-  max-width: 945px;
-}
+  .welcome_list{
+    padding-left: 270px;
+    /* max-width: 945px; */
+  }
 
   /* why us */
   .why_us_header{

@@ -328,6 +328,7 @@ body {
   width: 95%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
 
 .welcome_header {
@@ -365,8 +366,20 @@ body {
   padding-left: 20px;
 }
 
-.welcome_text.blue {
-  color: #677EC0;
+.welcome_text.blue{
+  color:#677EC0;
+}
+
+.subheading{
+  font-weight: bolder;
+}
+
+.welcome_text.link{
+  text-decoration: none;
+}
+
+.welcome_text.link:hover{
+  text-decoration: underline;
 }
 
 /* why us section */
@@ -375,6 +388,7 @@ body {
   max-width: 1500px;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -549,6 +563,7 @@ body {
 .video_list_item {
   list-style: none;
   width: 100%;
+  height: auto;
 }
 
 .video_list_item_header {
@@ -906,6 +921,11 @@ body {
 
 @media (min-width:1024px) {
 
+  /* welcome */
+  .welcome_header_desc{
+    font-size: 2rem;
+  }
+
   /* video */
   .video_list_item {
     width: 45%;
@@ -972,6 +992,12 @@ body {
 }
 
 @media (min-width:800px) {
+
+/* support services */
+.welcome_text.subheading,
+.welcome_text.link{
+  align-self: flex-end;
+}
   /* about us */
 
   /* about us */

@@ -12,6 +12,4 @@ Today's task?:
 
 Mishok21: Blog section,  fix footer, header.
 
-Denis: welcome section, support services
-
 Together: adoptiviti

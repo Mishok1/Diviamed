@@ -34,8 +34,8 @@
 
 img {
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  /* height: auto; */
+  object-fit: cover;
 }
 
 body {
@@ -161,12 +161,31 @@ body {
   flex-direction: column;
   row-gap: 5px;
   font-style: normal;
+  position: relative;
 }
 
 .contact_address_link {
   text-decoration: none;
   color: #1E1E1E;
   text-align: end;
+}
+
+.contact_address_link:nth-child(1):before {
+  content: url("../images/icons/");
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  top: 0;
+  left: -25px;
+}
+
+.contact_address_link:nth-child(2):before {
+  content: url("../images/icons/arrow.svg");
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  top: 28px;
+  left: -25px;
 }
 
 /* navigation */
@@ -366,19 +385,19 @@ body {
   padding-left: 20px;
 }
 
-.welcome_text.blue{
-  color:#677EC0;
+.welcome_text.blue {
+  color: #677EC0;
 }
 
-.subheading{
+.subheading {
   font-weight: bolder;
 }
 
-.welcome_text.link{
+.welcome_text.link {
   text-decoration: none;
 }
 
-.welcome_text.link:hover{
+.welcome_text.link:hover {
   text-decoration: underline;
 }
 
@@ -922,7 +941,7 @@ body {
 @media (min-width:1024px) {
 
   /* welcome */
-  .welcome_header_desc{
+  .welcome_header_desc {
     font-size: 2rem;
   }
 
@@ -993,11 +1012,12 @@ body {
 
 @media (min-width:800px) {
 
-/* support services */
-.welcome_text.subheading,
-.welcome_text.link{
-  align-self: flex-end;
-}
+  /* support services */
+  .welcome_text.subheading,
+  .welcome_text.link {
+    align-self: flex-end;
+  }
+
   /* about us */
 
   /* about us */

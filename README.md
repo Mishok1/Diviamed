@@ -10,6 +10,20 @@ https://diviamed.com/
 
 Today's task?:
 
-Mishok21: Blog section,  fix footer, header.
+Mishok21:
+about_us -
+our specialities
+how to start
+contact us
+REGISTER
+transform: blog_section
 
-Together: adoptiviti
+Denis:
+support servisec
+why ukraine
+collected views
+
+
+Together:
+adoptiviti
+blog with image right or left

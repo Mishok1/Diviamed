@@ -1124,3 +1124,32 @@ body {
     font-size: 2rem;
   }
 }
+
+/* about_page */
+
+.about_section {
+  margin-bottom: 180px;
+}
+
+.about_title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about_img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.about_container {
+  background-color: #e5e5e5;
+  margin-left: 130px;
+  padding: 50px;
+}
+
+.about_list {
+  margin: 0;
+}

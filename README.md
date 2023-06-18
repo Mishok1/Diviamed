@@ -8,7 +8,7 @@ Junior Front-End Developer: Michael Melnikov.
 https://diviamed.com/
 
 
-Today's task?:
+Today's task:
 
 Mishok21:
 about_us -

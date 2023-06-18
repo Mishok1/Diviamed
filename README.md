@@ -11,12 +11,13 @@ https://diviamed.com/
 Today's task:
 
 Mishok21:
-about_us             +
-our specialities     +
-how to start         +
-contact us           +
-REGISTER
+about_us                 +
+our specialities         +
+how to start             +
+contact us               +
 transform: blog_section  +
+REGISTER                 -
+log in                   -
 
 Denis:
 support servisec
@@ -31,3 +32,4 @@ blog with image right or left
 
 !!!Questions!!!
 1) Nujno pogovorit o naimenovanii classov
+2)Sabil kak delat formi, nado podlatat

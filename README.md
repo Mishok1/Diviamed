@@ -14,9 +14,9 @@ Mishok21:
 about_us             +
 our specialities     +
 how to start         +
-contact us
+contact us           +
 REGISTER
-transform: blog_section
+transform: blog_section  +
 
 Denis:
 support servisec
@@ -27,3 +27,7 @@ collected views
 Together:
 adoptiviti
 blog with image right or left
+
+
+!!!Questions!!!
+1) Nujno pogovorit o naimenovanii classov

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="visually_hidden">Contacts</h1>
+    <section class="contact_us_section width_container">
+        <h2 class="contact_us_title">Contact us</h2>
+        <address class="contact_address">
+            <a class="address_link" href="mailto:info@diviamed.com">info@diviamed.com</a>
+            <a class="address_link" href="tel:+380932168890">+38 093 2168890</a>
+            <p class="address">Klovsky Uzviz, 7, office 95, 01021, Kyiv, Ukraine</p>
+        </address>
+    </section>
+    <section class="contact_section">
+        <h2 class="contact_section_header">ASK A QUESTION</h2>
+        <form action="index.html" method="POST" class="contact_section_form">
+            <div class="contact_section_form_left">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <input type="tel" placeholder="Phone">
+                <select name="topic">
+                    <option value="null">---</option>
+                    <option value="assisted_reproductive_treatments">Assisted Reproductive Treatments</option>
+                    <option value="dentistry">Dentistry</option>
+                    <option value="aesthetic_medicine">Aesthetic Medicine</option>
+                    <option value="osteopathy">Osteopathy</option>
+                    <option value="ophthalmology">Ophthalmology</option>
+                    <option value="laboratory_tests_and_diagnostic_imaging">Laboratory Tests and Diagnostic imaging
+                    </option>
+                    <option value="wellness">Wellness</option>
+                    <option value="rehabilitation">Rehabilitation</option>
+                </select>
+            </div>
+            <div class="contact_section_form_right">
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="button">Send</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>

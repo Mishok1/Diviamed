@@ -11,7 +11,7 @@ https://diviamed.com/
 Today's task:
 
 Mishok21:
-about_us -
+about_us             +
 our specialities
 how to start
 contact us

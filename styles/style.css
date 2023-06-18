@@ -1153,3 +1153,43 @@ body {
 .about_list {
   margin: 0;
 }
+
+/* how_to_start_page */
+
+.how_to_start_title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.how_to_start_title_desc {
+  margin: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.how_to_start_list {
+  list-style-type: none;
+}
+
+.how_to_start_item {
+  margin-bottom: 100px;
+}
+
+.how_to_start_item_title {
+  text-transform: uppercase;
+  color: #677ec0;
+  margin-bottom: 35px;
+}
+
+.steps_list {
+  list-style-type: disc;
+  padding: 50px 50px 50px 150px;
+  background-color: #e5e5e5;
+}
+
+.how_to_start_post_scriptum {
+  margin-bottom: 35px;
+}

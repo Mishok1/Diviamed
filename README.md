@@ -12,8 +12,8 @@ Today's task:
 
 Mishok21:
 about_us             +
-our specialities
-how to start
+our specialities     +
+how to start         +
 contact us
 REGISTER
 transform: blog_section

@@ -408,6 +408,7 @@ body {
 .left_box_list,
 .right_box_list {
   padding-left: 20px;
+  line-height: 1.75rem;
 }
 
 .left_box_text.blue,
@@ -1081,12 +1082,14 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    object-fit: contain;
   }
   .right_box_image {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    object-fit: contain;
   }
 
   .left_box_text_wrapper,
@@ -1445,4 +1448,28 @@ body {
   .review_box_text_wrapper{
     padding-left: 130px;
   }
+}
+
+/* content page */
+
+.content_page_blue_text{
+  color: #677EC0;
+}
+
+.content_page_list{
+  margin-bottom: 2rem;
+}
+
+.support_services_text.lsit_item{
+  margin: 0;
+  line-height: 1.75rem;
+}
+
+.content_page_subtitle{
+  max-width: 1500px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  color: #677EC0;
 }

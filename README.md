@@ -11,18 +11,10 @@ https://diviamed.com/
 Today's task:
 
 Mishok21:
-about_us                 +
-our specialities         +
-how to start             +
-contact us               +
-transform: blog_section  +
 REGISTER                 -
 log in                   -
 
 Denis:
-support servisec +
-why ukraine
-collected views +
 
 
 Together:

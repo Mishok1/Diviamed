@@ -1473,3 +1473,19 @@ body {
   font-weight: lighter;
   color: #677EC0;
 }
+
+.content_page_note_section{
+  width: 100%;
+  height: auto;
+  background-color: #677ec0;
+  color:white;
+}
+
+.content_page_note_text{
+  max-width: 1055px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 30px;
+  margin-bottom: 100px;
+  font-size: 1.25rem;
+}

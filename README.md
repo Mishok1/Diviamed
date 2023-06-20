@@ -11,17 +11,14 @@ https://diviamed.com/
 Today's task:
 
 Mishok21:
-REGISTER                 -
-log in                   -
-
 Denis:
 
-
 Together:
-adoptiviti
-blog with image right or left
+21.06
+1. adoptiviti
+2. 1st part wordpress
+
 
 
 !!!Questions!!!
-1) Nujno pogovorit o naimenovanii classov
-2)Sabil kak delat formi, nado podlatat
+1. Sabil kak delat formi, nado podlatat

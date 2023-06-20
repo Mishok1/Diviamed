@@ -1496,7 +1496,7 @@ body {
 
 .content_page_list_nondotted{
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 1375px;
   margin-bottom: 2.5rem;
 }
@@ -1532,7 +1532,7 @@ body {
 }
 
 .content_page_note_text {
-  max-width: 1055px;
+  
   text-align: center;
   margin: 0 auto;
   padding: 50px 30px;
@@ -1540,6 +1540,9 @@ body {
   font-size: 1.25rem;
 }
 
-.assisted_reproductive_bottom_section{
+.content_page_bottom_section{
+  margin: 0 auto;
   margin-bottom: 6rem;
+  width: 90%;
+  max-width: 1375px;
 }

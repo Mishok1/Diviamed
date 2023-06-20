@@ -1532,7 +1532,7 @@ body {
 }
 
 .content_page_note_text {
-  
+
   text-align: center;
   margin: 0 auto;
   padding: 50px 30px;
@@ -1545,4 +1545,17 @@ body {
   margin-bottom: 6rem;
   width: 90%;
   max-width: 1375px;
+}
+
+/* rehabilitation page */
+
+/* rehabilitation_section */
+
+.rehabilitation_title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.our_services_list {
+  background-color: #b8b8b8;
 }

@@ -639,6 +639,8 @@ body {
 .specialities_title {
   text-transform: uppercase;
   text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
 }
 
 .specialities_list {
@@ -648,6 +650,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .specialities_item {
@@ -655,6 +658,7 @@ body {
   flex-direction: column;
   height: 480px;
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 
 .specialities_subtitle {
@@ -1069,6 +1073,10 @@ body {
 
 @media (min-width:1440px) {
 
+  .specialities_item{
+    flex-grow: 0;
+  }
+
   /* about us */
   .content_container .left_box_text_wrapper {
     margin-left: auto;
@@ -1114,10 +1122,14 @@ body {
 }
 
 @media (max-width:1024px) {
+  .specialities_list{
+    gap: 15px;
+  }
   /* header */
   .info_user_item.address{
     display: none;
   }
+
   /* carousel */
   .carousel_button_left,
   .carousel_button_right {
@@ -1144,6 +1156,7 @@ body {
 
 @media (min-width:1024px) {
 
+  
   /* welcome */
   .left_box_header_desc,
   .right_box_header_desc {
@@ -1371,6 +1384,26 @@ body {
   }
   .header_contacts_address .contact_address_link:last-child{
     letter-spacing: -.5px;
+  }
+}
+
+@media (max-width: 600px){
+
+  .specialities_title {
+  font-size: 1.875rem;
+}
+
+  .specialities_list{
+    display: block;
+  }
+  .specialities_item{
+    height: auto;
+  }
+  .specialities_subtitle{
+    margin-bottom: 1rem;
+  }
+  .specialities_link{
+    margin-top: 0;
   }
 }
 

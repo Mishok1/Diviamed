@@ -92,3 +92,12 @@ const navigateMobilePagination = (index) => {
 }
 
 getMobilePagination()
+
+
+// button
+
+const openMenuBtn = document.getElementById('header_open_menu_btn');
+
+function sayHi() {
+    console.log('button works')
+}

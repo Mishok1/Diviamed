@@ -45,9 +45,10 @@ body {
   margin: 0;
   color: #1E1E1E;
 }
-
+/* changed */
 .width_container {
-  width: 1500px;
+  max-width: 1500px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -228,9 +229,50 @@ body {
   opacity: 70%;
 }
 
+.header_open_menu_wrapper{
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: relative;
+}
+.header_open_menu_wrapper:before{
+  content: '';
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.header_open_menu_wrapper:after{
+  content: '';
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.header_open_menu_btn{
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: transparent;
+  z-index: 10;
+  border: none;
+}
+
+
 .header_form {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .header_form_input {
@@ -952,6 +994,12 @@ body {
   }
 }
 
+@media (max-width:1480px){
+  .navigation_list .navigation_item a{
+    font-size: 0.875rem;
+  }
+}
+
 @media (min-width:1440px) {
 
   /* about us */
@@ -982,8 +1030,21 @@ body {
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1190px){
+  .navigation_list{
+    display: none;
+  }
 
+  .header_form{
+    margin-left: auto;
+  }
+}
+
+@media (max-width:1024px) {
+  /* header */
+  .info_user_item.address{
+    display: none;
+  }
   /* carousel */
   .carousel_button_left,
   .carousel_button_right {
@@ -1218,6 +1279,25 @@ body {
 @media (max-width: 800px) {
   .we_recommend_header {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 605px){
+  .header_contacts.width_container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header_contacts_address .contact_address_link{
+    font-size: 13px;
+  }
+  .header_contacts_address .contact_address_link:first-child{
+    margin-bottom: .5rem;
+  }
+  .header_contacts_address .contact_address_link:first-child::before{
+    top: 0;
+  }
+  .header_contacts_address .contact_address_link:last-child{
+    letter-spacing: -.5px;
   }
 }
 

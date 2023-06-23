@@ -15,7 +15,7 @@ Denis:
 
 Together:
 21.06
-1. adoptiviti
+1. adoptiviti +
 2. 1st part wordpress
 
 

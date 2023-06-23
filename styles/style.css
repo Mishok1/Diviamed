@@ -45,9 +45,10 @@ body {
   margin: 0;
   color: #1E1E1E;
 }
-
+/* changed */
 .width_container {
-  width: 1500px;
+  max-width: 1500px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -151,6 +152,73 @@ body {
   padding: 15px 30px;
 }
 
+.mobile_view_navigation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.8);
+  z-index: 10;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.mobile_navigation_button{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+
+}
+
+.mobile_navigation_button::before{
+  content: "";
+  width: 24px;
+  height: 6px;
+  background: #1e1e1e;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 17px;
+  left: 8px;
+}
+.mobile_navigation_button::after{
+  content: "";
+  width: 24px;
+  height: 6px;
+  background: #1e1e1e;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 17px;
+  left: 8px;
+}
+
+.mobile_navigation_list{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items:center;
+  text-align: center;
+  height: auto;
+}
+
+.mobile_navigation_list_item{
+  list-style: none;
+  width: 190px;
+}
+.mobile_navigation_list_item a{
+  color: inherit;
+}
+
+
 /* .header_contacts::after {
   content: "";
   position: absolute;
@@ -228,9 +296,50 @@ body {
   opacity: 70%;
 }
 
+.header_open_menu_wrapper{
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: relative;
+}
+.header_open_menu_wrapper:before{
+  content: '';
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.header_open_menu_wrapper:after{
+  content: '';
+  height: 5px;
+  width: 35px;
+  background: black;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.header_open_menu_btn{
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: transparent;
+  z-index: 10;
+  border: none;
+}
+
+
 .header_form {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .header_form_input {
@@ -530,6 +639,8 @@ body {
 .specialities_title {
   text-transform: uppercase;
   text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
 }
 
 .specialities_list {
@@ -539,6 +650,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .specialities_item {
@@ -546,6 +658,7 @@ body {
   flex-direction: column;
   height: 480px;
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 
 .specialities_subtitle {
@@ -976,7 +1089,17 @@ body {
   }
 }
 
+@media (max-width:1480px){
+  .navigation_list .navigation_item a{
+    font-size: 0.875rem;
+  }
+}
+
 @media (min-width:1440px) {
+
+  .specialities_item{
+    flex-grow: 0;
+  }
 
   /* about us */
   .content_container .left_box_text_wrapper {
@@ -1006,7 +1129,30 @@ body {
   }
 }
 
+@media (min-width:1190px){
+  .header_open_menu_wrapper{
+    display: none;
+  }
+}
+
+@media (max-width:1190px){
+  .navigation_list{
+    display: none;
+  }
+
+  .header_form{
+    margin-left: auto;
+  }
+}
+
 @media (max-width:1024px) {
+  .specialities_list{
+    gap: 15px;
+  }
+  /* header */
+  .info_user_item.address{
+    display: none;
+  }
 
   /* carousel */
   .carousel_button_left,
@@ -1034,6 +1180,7 @@ body {
 
 @media (min-width:1024px) {
 
+  
   /* welcome */
   .left_box_header_desc,
   .right_box_header_desc {
@@ -1242,6 +1389,45 @@ body {
 @media (max-width: 800px) {
   .we_recommend_header {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 605px){
+  .header_contacts.width_container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header_contacts_address .contact_address_link{
+    font-size: 13px;
+  }
+  .header_contacts_address .contact_address_link:first-child{
+    margin-bottom: .5rem;
+  }
+  .header_contacts_address .contact_address_link:first-child::before{
+    top: 0;
+  }
+  .header_contacts_address .contact_address_link:last-child{
+    letter-spacing: -.5px;
+  }
+}
+
+@media (max-width: 600px){
+
+  .specialities_title {
+  font-size: 1.875rem;
+}
+
+  .specialities_list{
+    display: block;
+  }
+  .specialities_item{
+    height: auto;
+  }
+  .specialities_subtitle{
+    margin-bottom: 1rem;
+  }
+  .specialities_link{
+    margin-top: 0;
   }
 }
 

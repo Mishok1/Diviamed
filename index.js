@@ -92,3 +92,25 @@ const navigateMobilePagination = (index) => {
 }
 
 getMobilePagination()
+
+
+// button
+
+const openMenuBtn = document.getElementById('header_open_menu_btn');
+const closeMenuBtn = document.getElementById('mobile_navigation_button');
+const mobileMenuy = document.getElementById('mobile_view_navigation');
+const body = document.getElementsByTagName("BODY")[0];
+
+
+function openMenu() {
+    mobileMenuy.style.display = 'grid';
+    body.style.overflow = 'hidden';
+};
+
+function closeMenu() {
+    mobileMenuy.style.display = 'none';
+    body.style.overflow = 'visible ';
+};
+
+openMenuBtn.addEventListener('click', openMenu);
+closeMenuBtn.addEventListener('click', closeMenu);
